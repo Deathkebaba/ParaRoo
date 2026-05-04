@@ -1,0 +1,16 @@
+{
+	"extends": "@roo-code/config-typescript/base.json",
+	"compilerOptions": {
+		"types": ["vitest/globals"],
+		"outDir": "dist",
+		"jsx": "react-jsx",
+		"jsxImportSource": "react",
+		"baseUrl": ".",
+		"ignoreDeprecations": "6.0",
+		"paths": {
+			"@/*": ["src/*"]
+		}
+	},
+	"include": ["src", "*.config.ts"],
+	"exclude": ["node_modules"]
+}

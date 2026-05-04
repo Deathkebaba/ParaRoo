@@ -1,0 +1,17 @@
+{
+  "name": "roo-harness-workspace",
+  "private": true,
+  "packageManager": "pnpm@10.8.1",
+  "engines": {
+    "node": "20.19.2"
+  },
+  "workspaces": [
+    "src",
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "check-types": "pnpm --filter @roo-code/cli check-types",
+    "build:cli": "pnpm --filter @roo-code/cli build"
+  }
+}
